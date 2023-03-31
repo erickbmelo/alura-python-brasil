@@ -1,6 +1,7 @@
+# pip install validate-docbr
+from validate_docbr import CPF
 from cpf import Cpf
 
+cpf = CPF()
 
-cpf = "39710994832"
-objeto_cpf = Cpf(cpf)
-print(objeto_cpf)
+print(cpf.validate("01234567890"))
